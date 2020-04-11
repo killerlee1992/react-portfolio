@@ -2,15 +2,20 @@
 const SplitChunksPlugin = require('webpack/lib/optimize/SplitChunksPlugin');
 
 module.exports = {
+
   entry: {
     app: ['./src/bootstrap.js'],
     vendor: './src/vendor.js',
   },
 
   resolve: {
+    
+
     extensions: ['.js', '.scss'],
 
     modules: ['node_modules'],
+
+    
   },
 
   module: {
@@ -45,3 +50,4 @@ module.exports = {
     }),
   ],
 };
+
